@@ -1,4 +1,4 @@
-class PostsController < HomeController
+class PostsController < ApplicationController
     before_action :find_post, only: [:show, :edit, :update, :destroy]
     before_action :check_admin, only: [:index]
     def index

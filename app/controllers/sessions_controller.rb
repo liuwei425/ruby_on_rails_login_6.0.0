@@ -1,4 +1,5 @@
-class SessionsController < HomeController
+class SessionsController < ApplicationController
+    layout "homelayout"
     def new
     end
 

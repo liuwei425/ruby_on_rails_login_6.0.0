@@ -1,0 +1,2 @@
+class HomelayoutController < ApplicationController
+end
