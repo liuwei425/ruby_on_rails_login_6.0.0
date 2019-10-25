@@ -7,7 +7,6 @@ class PostviewController < ApplicationController
         else
             @category_id = params[:category]
             @posts = Post.where(category_id: @category_id).order("created_at DESC")
-            puts @posts.inspect
             @categories = Category.all.order("created_at DESC")
         end
     end

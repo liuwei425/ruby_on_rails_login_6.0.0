@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
     resources :users
     # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-    root 'home#index'
+    root 'postview#index'
     resources :users
     resources :sessions, only: [:new, :create, :destroy]
     get 'signup', to: 'users#new', as: 'signup'
