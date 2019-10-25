@@ -1,2 +1,5 @@
-<h1><%= @post.title %></h1>
-<p><%= @post.content %></p>
+<% @posts.each do |post| %>
+  <h1><%= link_to post.title, post %></h1>
+  <p><%= post.content %></p>
+<% end %>
+<p><%= link_to "create", "posts/new" %></p>
